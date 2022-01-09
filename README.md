@@ -16,3 +16,7 @@ Steps:
 7. Run the model (model.py)
 
 This can also be found in training_process.py
+
+The training utilizes CMA because there are less than 1000 parameters but should you want to train on more paremeters (in the thousands) all you need to do is 
+navigate to train.py, locate line 405 and change 'default' from 'cma' to 'pepg' as well as change 'optimizer' on line 26 from 'cma' to 'pepg.'
+
